@@ -4,7 +4,8 @@ import (
 	"fmt"
 )
 
-// GetInput запрашивает два числа у пользователя
+// GetInput запрашивает числа у пользователя
+// Два числа
 func GetInput() (int, int) {
 	var a, b int
 	fmt.Print("Введите первое число: ")
