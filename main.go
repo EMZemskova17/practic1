@@ -1,5 +1,6 @@
 package main
 
+//main1
 func main() {
 	//Получение значений, введенных пользователем
 	a, b := GetInput()
