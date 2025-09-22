@@ -5,6 +5,7 @@ import (
 )
 
 // GetInput запрашивает два числа
+// Два числа
 func GetInput() (int, int) {
 	var a, b int
 	fmt.Print("Введите первое число: ")
