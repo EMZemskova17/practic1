@@ -44,8 +44,18 @@ jobs:
         shell: bash
 
       - name: Install Doxygen
-        run: choco install doxygen
+        run: winget install --id Doxygen.Doxygen -e --accept-package-agreements --accept-source-agreements
         shell: powershell
+
+      - name: Download Doxygen
+        run: |
+          $url = "https://doxygen.nl/files/doxygen-1.9.9.windows.x64.zip"
+          $out = "$env:TEMP\doxygen.zip"
+          Invoke-WebRequest $url -OutFile $out
+          Expand-Archive $out -DestinationPath "C:\doxygen"
+          $env:PATH += ";C:\doxygen\bin"
+        shell: powershell
+
 
       - name: Generate Doxygen docs
         run: doxygen Doxyfile
