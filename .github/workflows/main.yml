@@ -43,8 +43,4 @@ jobs:
         run: go test ./... -v
         shell: bash
 
-      - name: Install Doxygen
-        run: winget install --id Doxygen.Doxygen -e --accept-package-agreements --accept-source-agreements
-        shell: powershell
-
 
