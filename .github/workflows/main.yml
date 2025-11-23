@@ -47,13 +47,4 @@ jobs:
         run: winget install --id Doxygen.Doxygen -e --accept-package-agreements --accept-source-agreements
         shell: powershell
 
-  doc-generation:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Install Doxygen
-        run: sudo apt-get update && sudo apt-get install -y doxygen
-
-      - name: Generate Doxygen documentation
-        run: doxygen Doxyfile
-
 
