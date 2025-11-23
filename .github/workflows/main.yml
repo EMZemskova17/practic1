@@ -47,17 +47,14 @@ jobs:
         run: winget install --id Doxygen.Doxygen -e --accept-package-agreements --accept-source-agreements
         shell: powershell
 
-            # 6. Install Doxygen
-      - name: Download Doxygen
-        run: |
-          $url = "https://www.doxygen.nl/files/doxygen-1.9.9.windows.x64.zip"
-          $out = "$env:TEMP\doxygen.zip"
-          Expand-Archive $out -DestinationPath "C:\doxygen"
-          $env:PATH += ";C:\doxygen\bin"
-        shell: powershell
+  doc-generation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Doxygen
+        run: sudo apt-get update && sudo apt-get install -y doxygen
 
-      # 7. Generate documentation
       - name: Generate Doxygen documentation
         run: doxygen Doxyfile
         shell: powershell
+
 
