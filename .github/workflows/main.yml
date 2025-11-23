@@ -66,8 +66,10 @@ jobs:
               git push origin HEAD:main
           } else {
               Write-Host "No changes to commit"
+              exit 0
           }
         shell: powershell
+
 
 
 
