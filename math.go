@@ -57,3 +57,25 @@ func Pow(base, exp int) int {
 	}
 	return result
 }
+
+/**
+ * Factorial вычисляет факториал числа n.
+ *
+ * Факториал определяется как:
+ *   n! = 1 * 2 * 3 * ... * n
+ *
+ * Если n < 0 — функция возвращает 0, так как факториал отрицательных чисел не определён.
+ *
+ * @param n  число, для которого нужно вычислить факториал
+ * @return   факториал числа n
+ */
+func Factorial(n int) int {
+	if n < 0 {
+		return 0
+	}
+	result := 1
+	for i := 1; i <= n; i++ {
+		result *= i
+	}
+	return result
+}
