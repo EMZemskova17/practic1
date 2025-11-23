@@ -1,8 +1,10 @@
 PROJECT_NAME           = "Practic1"
-OUTPUT_DIRECTORY       = docs
+OUTPUT_DIRECTORY       = docs      # куда будет генерироваться документация
 GENERATE_HTML          = YES
 GENERATE_LATEX         = NO
-INPUT                  = ./  # папка с кодом
-FILE_PATTERNS          = *.go
-RECURSIVE              = YES
-EXTRACT_ALL            = YES
+INPUT                  = ./        # папка с кодом
+FILE_PATTERNS          = *.go      # расширение файлов
+RECURSIVE              = YES       # рекурсивный обход папок
+EXTRACT_ALL            = YES       # извлекать всё, даже без комментариев
+OPTIMIZE_OUTPUT_FOR_C  = NO
+QUIET                  = NO
