@@ -48,7 +48,7 @@ jobs:
         shell: bash
 
       - name: Generate documentation
-        run: $env:USERPROFILE\go\bin\godoc -html ./... > docs/generated.html
+        run: & "$env:USERPROFILE\go\bin\godoc.exe" -html ./... > docs/generated.html
         shell: powershell
 
 
