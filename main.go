@@ -1,5 +1,6 @@
 package main
 
+//Основная функция программы
 func main() {
 	//Получение значений, введенных пользователем
 	a, b := GetInput()
@@ -9,5 +10,6 @@ func main() {
 	diff := Sub(a, b)
 	quot := Div(a, b)
 
+	//Вывод рензультата
 	PrintResults(a, b, sum, diff, prod, quot)
 }
