@@ -31,6 +31,19 @@ jobs:
         with:
           go-version: "1.21"
 
+      - name: Generate documentation
+        run: godoc -html ./... > docs/generated.html
+        shell: bash
+
+    - name: Commit generated docs
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add docs/generated.html
+          git commit -m "Update generated documentation" || echo "No changes to commit"
+          git push origin HEAD:main
+        shell: bash
+
       - name: Install dependencies
         run: go mod tidy
         shell: bash
