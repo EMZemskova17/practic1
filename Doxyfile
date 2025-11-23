@@ -1,0 +1,8 @@
+PROJECT_NAME           = "Practic1"
+OUTPUT_DIRECTORY       = docs
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+INPUT                  = ./  # папка с кодом
+FILE_PATTERNS          = *.go
+RECURSIVE              = YES
+EXTRACT_ALL            = YES
