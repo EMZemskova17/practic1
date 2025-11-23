@@ -49,7 +49,25 @@ jobs:
 
       - name: Generate documentation
         run: |
-          & "$env:USERPROFILE\go\bin\godoc.exe" -html ./... > docs/generated.html
+          $docFile = "docs/generated.md"
+          " # Practic1 Project`n" > $docFile
+          "## Functions`n" >> $docFile
+          Get-ChildItem ./ -Recurse -Filter "*.go" | ForEach-Object {
+              $content = Get-Content $_.FullName
+              foreach ($line in $content) {
+                  if ($line -match "^//") { $line >> $docFile }
+              }
+          }
+        shell: powershell
+
+      # 7. Коммит документации
+      - name: Commit generated docs
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add docs/generated.md
+          git commit -m "Update generated documentation" || echo "No changes to commit"
+          git push origin HEAD:main
         shell: powershell
 
 
