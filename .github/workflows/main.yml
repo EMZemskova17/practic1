@@ -55,6 +55,5 @@ jobs:
 
       - name: Generate Doxygen documentation
         run: doxygen Doxyfile
-        shell: powershell
 
 
