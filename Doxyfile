@@ -1,15 +1,65 @@
-# Где искать файлы
-INPUT = .
-RECURSIVE = YES
+#----------------------------------------
+# Базовая информация о проекте
+#----------------------------------------
 
-# Какие файлы брать
-FILE_PATTERNS = *.go
+PROJECT_NAME           = "Practic1"
+PROJECT_BRIEF          = "Документация по Go-проекту Practic1"
+OUTPUT_DIRECTORY       = docs
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
 
-# Извлекать всё подряд
-EXTRACT_ALL = YES
-EXTRACT_PRIVATE = YES
-EXTRACT_STATIC = YES
+#----------------------------------------
+# Где искать код
+#----------------------------------------
 
-# Опции для Go
-OPTIMIZE_OUTPUT_FOR_C = NO
-OPTIMIZE_OUTPUT_JAVA = NO
+INPUT                  = .
+RECURSIVE              = YES
+FILE_PATTERNS          = *.go
+
+#----------------------------------------
+# Извлекать что?
+#----------------------------------------
+
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+EXTRACT_LOCAL_METHODS  = YES
+
+#----------------------------------------
+# Что НЕ исключать
+#----------------------------------------
+
+EXCLUDE                =
+EXCLUDE_PATTERNS       =
+
+#----------------------------------------
+# Настройки Go
+#----------------------------------------
+
+OPTIMIZE_OUTPUT_FOR_C  = NO
+OPTIMIZE_OUTPUT_JAVA   = NO
+OPTIMIZE_FOR_CPLUSPLUS = NO
+OPTIMIZE_OUTPUT_VHDL   = NO
+
+EXTENSION_MAPPING      = go=C
+
+#----------------------------------------
+# Формат документации
+#----------------------------------------
+
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = YES
+REFERENCES_RELATION    = YES
+REFERENCES_LINK_SOURCE = YES
+VERBATIM_HEADERS       = YES
+
+#----------------------------------------
+# Диаграммы
+#----------------------------------------
+
+HAVE_DOT               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+DOT_IMAGE_FORMAT       = svg
+DOT_TRANSPARENT        = YES
