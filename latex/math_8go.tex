@@ -1,0 +1,84 @@
+\doxysection{math.\+go File Reference}
+\hypertarget{math_8go}{}\label{math_8go}\index{math.go@{math.go}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+package \mbox{\hyperlink{main_8go_a7f3c3ebbb082893c70f36ea35d09c6ce}{main}} func \mbox{\hyperlink{math_8go_aa74e1c0f1af86594d63f58452b8d3030}{Add}} (a, b int) int
+\item 
+func \mbox{\hyperlink{math_8go_aa759b57c52b2abc87fb87a9b56ebb606}{Sub}} (a, b int) int
+\item 
+func \mbox{\hyperlink{math_8go_ab132a6d1be6d43b83dfe66d47f311ec3}{Mul}} (a, b int) int
+\item 
+func \mbox{\hyperlink{math_8go_ab287e1abbf727456ac31cec9ed15a0dd}{Div}} (a, b int) float64
+\item 
+func \mbox{\hyperlink{math_8go_a6a3ec2f12236580357fd45286fba3efd}{Pow}} (base, exp int) int
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{math_8go_aa74e1c0f1af86594d63f58452b8d3030}\label{math_8go_aa74e1c0f1af86594d63f58452b8d3030} 
+\index{math.go@{math.go}!Add@{Add}}
+\index{Add@{Add}!math.go@{math.go}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily package \mbox{\hyperlink{main_8go_a7f3c3ebbb082893c70f36ea35d09c6ce}{main}} func Add (\begin{DoxyParamCaption}\item[{a}]{,  }\item[{b int}]{ }\end{DoxyParamCaption})}
+
+Add возвращает сумму двух чисел a и b.
+
+Пример\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sum\ :=\ \mbox{\hyperlink{math_8go_aa74e1c0f1af86594d63f58452b8d3030}{Add}}(2,\ 3)\ \textcolor{comment}{//\ sum\ =\ 5}}
+
+\end{DoxyCode}
+ \Hypertarget{math_8go_ab287e1abbf727456ac31cec9ed15a0dd}\label{math_8go_ab287e1abbf727456ac31cec9ed15a0dd} 
+\index{math.go@{math.go}!Div@{Div}}
+\index{Div@{Div}!math.go@{math.go}}
+\doxysubsubsection{\texorpdfstring{Div()}{Div()}}
+{\footnotesize\ttfamily func Div (\begin{DoxyParamCaption}\item[{a}]{,  }\item[{b int}]{ }\end{DoxyParamCaption})}
+
+Div возвращает результат деления a на b. Если b = 0, функция возвращает 0.
+
+Пример\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{quotient\ :=\ \mbox{\hyperlink{math_8go_ab287e1abbf727456ac31cec9ed15a0dd}{Div}}(6,\ 3)\ \textcolor{comment}{//\ quotient\ =\ 2.0}}
+
+\end{DoxyCode}
+ \Hypertarget{math_8go_ab132a6d1be6d43b83dfe66d47f311ec3}\label{math_8go_ab132a6d1be6d43b83dfe66d47f311ec3} 
+\index{math.go@{math.go}!Mul@{Mul}}
+\index{Mul@{Mul}!math.go@{math.go}}
+\doxysubsubsection{\texorpdfstring{Mul()}{Mul()}}
+{\footnotesize\ttfamily func Mul (\begin{DoxyParamCaption}\item[{a}]{,  }\item[{b int}]{ }\end{DoxyParamCaption})}
+
+Mul возвращает произведение двух чисел a и b.
+
+Пример\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{product\ :=\ \mbox{\hyperlink{math_8go_ab132a6d1be6d43b83dfe66d47f311ec3}{Mul}}(2,\ 3)\ \textcolor{comment}{//\ product\ =\ 6}}
+
+\end{DoxyCode}
+ \Hypertarget{math_8go_a6a3ec2f12236580357fd45286fba3efd}\label{math_8go_a6a3ec2f12236580357fd45286fba3efd} 
+\index{math.go@{math.go}!Pow@{Pow}}
+\index{Pow@{Pow}!math.go@{math.go}}
+\doxysubsubsection{\texorpdfstring{Pow()}{Pow()}}
+{\footnotesize\ttfamily func Pow (\begin{DoxyParamCaption}\item[{base}]{,  }\item[{exp int}]{ }\end{DoxyParamCaption})}
+
+Pow возводит число base в степень exp и возвращает результат.
+
+Пример\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{result\ :=\ \mbox{\hyperlink{math_8go_a6a3ec2f12236580357fd45286fba3efd}{Pow}}(2,\ 3)\ \textcolor{comment}{//\ result\ =\ 8}}
+
+\end{DoxyCode}
+ \Hypertarget{math_8go_aa759b57c52b2abc87fb87a9b56ebb606}\label{math_8go_aa759b57c52b2abc87fb87a9b56ebb606} 
+\index{math.go@{math.go}!Sub@{Sub}}
+\index{Sub@{Sub}!math.go@{math.go}}
+\doxysubsubsection{\texorpdfstring{Sub()}{Sub()}}
+{\footnotesize\ttfamily func Sub (\begin{DoxyParamCaption}\item[{a}]{,  }\item[{b int}]{ }\end{DoxyParamCaption})}
+
+Sub возвращает разность двух чисел a и b.
+
+Пример\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{diff\ :=\ \mbox{\hyperlink{math_8go_aa759b57c52b2abc87fb87a9b56ebb606}{Sub}}(5,\ 2)\ \textcolor{comment}{//\ diff\ =\ 3}}
+
+\end{DoxyCode}
+ 
