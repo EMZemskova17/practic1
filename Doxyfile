@@ -1,10 +1,15 @@
+# Где искать файлы
+INPUT = .
+RECURSIVE = YES
+
+# Какие файлы брать
 FILE_PATTERNS = *.go
 
-#EXTENSION_MAPPING = go=C++   # удалить!
-
-OPTIMIZE_OUTPUT_FOR_C = NO
-OPTIMIZE_OUTPUT_JAVA = NO
-
+# Извлекать всё подряд
 EXTRACT_ALL = YES
 EXTRACT_PRIVATE = YES
 EXTRACT_STATIC = YES
+
+# Опции для Go
+OPTIMIZE_OUTPUT_FOR_C = NO
+OPTIMIZE_OUTPUT_JAVA = NO
